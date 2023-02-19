@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customers</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css ">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+</head>
+<body>
+	<!-- Menu section -->
+      <div class="containar">
+
+	  <section class="menu">
+		<div>
+			<div class="menu__titleEl">
+				<svg class="menu__logo"  role="img">
+				     <use class="" href="./img/sprite.svg#icon-setting"> </use>
+				     </svg>
+			     <h2 class="menu__title">
+				     Dashboard<span class="menu__titlText" role="text">v.01</span>
+			     </h2>
+			     
+			 </div>
+		     
+		     <ul class="menu__navList" role="ul">
+			     <li class="menu__navItem ">
+				<button type="button">
+					<svg width="15" height="15">
+						<use class="" href="./img/sprite.svg#icon-key-square"> </use>
+					</svg>
+					<a class=" menu__navLink" href="Dashboard">Dashboard</a>
+				</button>
+
+			     </li>
+			     <li class="menu__navItem ">
+				     <svg width="15" height="15">
+					     <use class="" href="./img/sprite.svg#icon-product"> </use>
+				     </svg>
+				     <div class="menu__navLinkEl">
+					  <a class=" menu__navLink" href="Product">Product</a>
+					  <svg width="15" height="15">
+						<use class="" href="./img/sprite.svg#icon-chevron-right"> </use>
+					  </svg>
+				     </div>
+     
+			     </li>
+			     <li class="menu__navItem  menu__navItem--current">
+				     <svg width="15" height="15">
+					     <use class="" href="./img/sprite.svg#icon-customers"> </use>
+				     </svg>
+				     <div class="menu__navLinkEl">
+					     <a class=" menu__navLink" href="#customers">Customers</a>
+					     <svg width="15" height="15">
+						     <use class="" href="./img/sprite.svg#icon-chevron-right"> </use>
+					    </svg>
+				     </div>
+			     </li>
+			     <li class="menu__navItem ">
+				     <svg width="15" height="15">
+					     <use class="" href="./img/sprite.svg#icon-income"> </use>
+				     </svg>
+				     <div class="menu__navLinkEl">
+					   <a class=" menu__navLink" href="Income">Income</a>
+					  <svg width="15" height="15">
+						<use class="" href="./img/sprite.svg#icon-chevron-right"> </use>
+					  </svg>
+				     </div>
+     
+			     </li>
+			     <li class="menu__navItem ">
+				     <svg width="15" height="15">
+					     <use class="" href="./img/sprite.svg#icon-promote"> </use>
+				     </svg>
+				     <div class="menu__navLinkEl">
+					     <a class=" menu__navLink" href="Promote">Promote</a>
+					     <svg width="15" height="15">
+						     <use class="" href="./img/sprite.svg#icon-chevron-right"> </use>
+					     </svg>
+				     </div>
+     
+			     </li>
+			     <li class="menu__navItem ">
+				     <svg width="15" height="15">
+					     <use class="" href="./img/sprite.svg#icon-help"> </use>
+				     </svg>
+				     <div class="menu__navLinkEl">
+						<a class=" menu__navLink" href="Help">Help</a>
+						<svg width="15" height="15">
+							 <use class="" href="./img/sprite.svg#icon-chevron-right"> </use>
+						</svg>
+				     </div>
+			     </li>
+		     </ul>
+	
+		</div>
+		 
+
+		<div class="activeManager">
+			<picture>
+				<!-- <source  srcset ="/img/Ellipse.webp 1x,/img/Ellipse@2x.webp 2x" type = "image/webp"/> -->
+                    
+				<source  srcset ="/img/Ellipse.jpg 1x, /img/Ellipse@2x.jpg 2x" />
+			    
+				<img  src ="#" alt ="photo with prodact manager" >
+			</picture>
+			<div class="activeManager__name">
+				<h3 class="activeManager__title">Evano</h3>
+				<p class="activeManager__text">Project Manager</p>
+			</div>	
+	
+        	</div>
+	 </section>
+	
+	<!-- Customers secton -->
+	<section class="customers" id="customers">
+
+		<p class="customers__salute">Hello Evano 👋🏼,</p>
+		<hr noshade="" size="1px" color="#EEEEEE" >
+		<div class="customers__table">
+
+			<div class="customers__tableInfo">
+				<div class="customers__tableInfoText">
+					<h1 class="customers__title">All Customers</h1>
+					<p class="customers__titleText">Active Members</p>
+				</div>
+				<input class="customers__input" type="text" placeholder="Search">
+			</div>
+			<table class="table">
+				<thead class="table__head">
+					<tr class="table__row">
+						<th class="table__headRow">Customer Name</th>
+						<th class="table__headRow">Company</th>
+						<th class="table__headRow">Phone Number</th>
+						<th class="table__headRow">Email</th>
+						<th class="table__headRow">Country</th>
+						<th class="table__headRow">Status</th>
+					</tr>
+				</thead>
+				<tbody class="table__body" >
+					
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Jane Cooper</td>
+						<td class="table__bodyCell">Microsoft</td>
+						<td class="table__bodyCell">(225)555-0118</td>
+						<td class="table__bodyCell">jane@microsoft.com</td>
+						<td class="table__bodyCell">United States</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn table__bodyBtn--active" type="button">Active</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Floyd Miles</td>
+						<td class="table__bodyCell">Yahoo</td>
+						<td class="table__bodyCell">(225)555-0100</td>
+						<td class="table__bodyCell">floyd@yahoo.com</td>
+						<td class="table__bodyCell">Kiribati</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn" type="button">Inactive</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Ronald Richards</td>
+						<td class="table__bodyCell">Adobe</td>
+						<td class="table__bodyCell">(302)555-0107</td>
+						<td class="table__bodyCell">ronald@adobe.com</td>
+						<td class="table__bodyCell">Israel</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn" type="button">Inactive</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Marvin McKinney</td>
+						<td class="table__bodyCell">Tesla</td>
+						<td class="table__bodyCell">(252)555-0126</td>
+						<td class="table__bodyCell">marvin@tesla.com</td>
+						<td class="table__bodyCell">Iran</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn table__bodyBtn--active" type="button">Active</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Jerome Bell</td>
+						<td class="table__bodyCell">Google</td>
+						<td class="table__bodyCell">(629)555-0129</td>
+						<td class="table__bodyCell">jerome@google.com</td>
+						<td class="table__bodyCell">Réunion</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn table__bodyBtn--active" type="button">Active</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Kathryn Murphy</td>
+						<td class="table__bodyCell">Microsoft</td>
+						<td class="table__bodyCell">(406)555-0120</td>
+						<td class="table__bodyCell">kathryn@microsoft.com</td>
+						<td class="table__bodyCell">Curaçao</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn table__bodyBtn--active" type="button">Active</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Jacob Jones</td>
+						<td class="table__bodyCell">Yahoo</td>
+						<td class="table__bodyCell">(208)555-0112</td>
+						<td class="table__bodyCell">jacob@yahoo.com</td>
+						<td class="table__bodyCell">Brazil</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn table__bodyBtn--active" type="button">Active</button></td>
+					</tr>
+					<tr class="table__bodyRow">
+						<td class="table__bodyCell">Kristin Watson</td>
+						<td class="table__bodyCell">Facebook</td>
+						<td class="table__bodyCell">(704)555-0127</td>
+						<td class="table__bodyCell">kristin@facebook.com</td>
+						<td class="table__bodyCell">Åland Islands</td>
+						<td class="table__bodyCell"><button class="table__bodyBtn" type="button">Inactive</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="customers__andEl">
+				<p class="customers__text">Showing data 1 to 8 of  256K entries</p>
+				<ul class="customers__list" role="ul">
+					<li class="customers__item">
+						<button class="customers__btn" type="button">
+							<svg width="15" height="15">
+								<use class="" href="./img/sprite.svg#icon-1"> </use>
+							</svg>
+						</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn" type="button">1</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn customers__btn--curent" type="button">2</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn" type="button">3</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn" type="button">4</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn" type="button">
+							<svg width="15" height="15">
+								<use class="" href="./img/sprite.svg#icon-svg"> </use>
+							</svg>
+						</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn" type="button">40</button>
+					</li>
+					<li class="customers__item">
+						<button class="customers__btn" type="button">
+							<svg width="15" height="15">
+								<use class="" href="./img/sprite.svg#icon-2"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	  </section>
+      </div>
+</body>
+</html>
